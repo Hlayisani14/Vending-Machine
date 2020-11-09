@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vending Manchine</title>
+</head>
+
+<body onload="fnStart()">
+    <div id="amount">
+        <h3>Amount: R0.00</h3>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="items" id="water" onclick="fnWater()">
+                <img src="img/water.png" alt="">
+                <p>Price: R7.00</p>
+            </div>
+            <div class="items" id="milk" onclick="fnMilk()">
+                <img src="img/milk.jpg" alt="">
+                <p id="milk-price">Price: R8.00</p>
+            </div>
+            <div class="items", id="lays" onclick="fnLays()">
+                <img src="img/lays.jpg" alt="">
+                <p id="lays-price">Price: R18.00</p>
+            </div>
+            <div class="items" id="juice" onclick="fnJuice()">
+                <img src="img/juice.jpg" alt="">
+                <p id="juice-price">Price: R10.00</p>
+            </div>
+            <div class="items" id="doritos" onclick="fnDoritos()">
+                <img src="img/doritos.jpg" alt="">
+                <p id="doritos-price">Price: R16.00</p>
+            </div>
+            <div class="items" id="barone" onclick="fnBarone()">
+                <img src="img/barone.jpg" alt="">
+                <p id="barone-price">Price: R8.00</p>
+            </div>
+        </div>
+        <div class="coins">
+            <div class="coin" id="one" onclick="one()">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="coin" id="two" onclick="two()">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="coin" id="five" onclick="five()">
+                <img src="img/5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="bought" onclick="addElement();">
+            <ul id="thelist">
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="products">
+        
+    <h2>Vending Machine Products</h2>
+
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Water</td>
+        <td>R7.00</td>
+        <td id="water-q"></td>
+      </tr>
+      <tr>
+        <td>Milk</td>
+        <td>R8.00</td>
+        <td id="milk-q"></td>
+      </tr>
+      <tr>
+        <td>Lays</td>
+        <td>R18.00</td>
+        <td id="lays-q"></td>
+      </tr>
+      <tr>
+        <td>Juice</td>
+        <td>R10.00</td>
+        <td id="juice-q"></td>
+      </tr>
+      <tr>
+        <td>Doritos</td>
+        <td>R16.00</td>
+        <td id="doritos-q"></td>
+      </tr>
+      <tr>
+        <td>BarOne</td>
+        <td>R8.00</td>
+        <td id="barone-q"></td>
+      </tr>
+    </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
